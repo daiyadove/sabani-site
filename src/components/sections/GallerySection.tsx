@@ -9,27 +9,27 @@ export function GallerySection() {
 
   const images = [
     {
-      src: "/images/gallery/1.jpg",
+      src: "/images/gallery/1.avif",
       alt: t.alt1
     },
     {
-      src: "/images/gallery/2.jpg",
+      src: "/images/gallery/2.avif",
       alt: t.alt2
     },
     {
-      src: "/images/gallery/3.jpg",
+      src: "/images/gallery/3.avif",
       alt: t.alt3
     },
     {
-      src: "/images/gallery/4.jpg",
+      src: "/images/gallery/4.avif",
       alt: t.alt4
     },
     {
-      src: "/images/gallery/5.jpg",
+      src: "/images/gallery/5.avif",
       alt: t.alt5
     },
     {
-      src: "/images/gallery/6.jpg",
+      src: "/images/gallery/6.avif",
       alt: t.alt6
     }
   ]
