@@ -5,6 +5,7 @@ import { VideoSection } from "@/components/sections/VideoSection"
 import { ActivitySection } from "@/components/sections/ActivitySection"
 import { GuideSection } from "@/components/sections/GuideSection"
 import { GallerySection } from "@/components/sections/GallerySection"
+import { CaptainSection } from "@/components/sections/CaptainSection"
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
         </div>
         <div id="guide">
           <GuideSection />
+        </div>
+        <div id="captain">
+          <CaptainSection />
         </div>
         <div id="gallery">
           <GallerySection />
