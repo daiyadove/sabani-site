@@ -2,16 +2,19 @@
 
 import { useI18n } from "@/lib/i18n/context"
 import { translations } from "@/lib/i18n/translations"
-import { User, Backpack, MapPin, Cloud, Calendar, Shield } from "lucide-react"
+import { User, Backpack, MapPin, Package, CreditCard, AlertTriangle, Shield, LucideIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-const icons = {
-  user: User,
-  backpack: Backpack,
-  map: MapPin,
-  cloud: Cloud,
-  calendar: Calendar,
-  shield: Shield,
+type IconName = 'user' | 'backpack' | 'map' | 'package' | 'credit-card' | 'alert-triangle' | 'shield'
+
+const icons: Record<IconName, LucideIcon> = {
+  'user': User,
+  'backpack': Backpack,
+  'map': MapPin,
+  'package': Package,
+  'credit-card': CreditCard,
+  'alert-triangle': AlertTriangle,
+  'shield': Shield,
 }
 
 export function GuideSection() {
@@ -32,7 +35,7 @@ export function GuideSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.items.map((item, index) => {
-            const Icon = icons[item.icon as keyof typeof icons]
+            const Icon = icons[item.icon as IconName]
             return (
               <Card key={index} className="border-2">
                 <CardHeader>
@@ -46,7 +49,7 @@ export function GuideSection() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 whitespace-pre-line">
                     {item.description}
                   </p>
                 </CardContent>

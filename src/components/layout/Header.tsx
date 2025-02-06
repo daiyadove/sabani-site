@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Menu } from "lucide-react"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
@@ -61,8 +62,15 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-          Sabani
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Sabani"
+            width={40}
+            height={40}
+            className="w-[40px] h-[40px]"
+            priority
+          />
         </Link>
         
         {/* デスクトップメニュー */}

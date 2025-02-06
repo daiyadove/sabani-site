@@ -48,7 +48,8 @@ export const translations = {
         features: [
           '帆で静かに走るサバニからの夕日',
           'ロマンティックな景色',
-          '所要時間100分'
+          '所要時間100分',
+          '日没時間の1時間前にお店に集合'
         ]
       },
       priceNote: '中学生以上は大人料金、小学生未満は2000円です。消費税・保険料込み。',
@@ -71,12 +72,12 @@ export const translations = {
     gallery: {
       title: 'フォトギャラリー',
       description: '実際の体験の様子をご覧ください。自然の中での特別な瞬間をお届けします。',
-      alt1: '夕暮れ時の穏やかな海',
-      alt2: 'プライベートビーチでの一時',
-      alt3: 'クルーズでの航海体験',
-      alt4: '色とりどりの熱帯魚との出会い',
-      alt5: '無人島でのキャンプファイヤー',
-      alt6: '笑顔の参加者たち'
+      alt1: '',
+      alt2: '',
+      alt3: '',
+      alt4: '',
+      alt5: '',
+      alt6: ''
     },
     footer: {
       company: {
@@ -111,29 +112,46 @@ export const translations = {
           icon: 'user'
         },
         {
-          title: '持ち物',
-          description: '水着、タオル、着替え、日焼け止め、サングラス（必要な方）',
+          title: '服装と持ち物',
+          description: `・乗船時は砂浜からの乗船で足元が濡れるため、濡れても良い服装
+・サンダルでも乗船可能
+・帽子（日差しが強いため）
+・長袖やラッシュガード（日焼け対策）
+・お飲み物
+・酔い止め（必要な方）
+・お子様用ライフジャケットや浮き輪（必要な方）
+※泳げないお子様でもシュノーケルツアーに参加可能です`,
           icon: 'backpack'
         },
         {
-          title: '集合場所・時間',
-          description: '吉田サバニ造船（石垣市川平）に出発15分前までにお越しください。',
-          icon: 'map'
+          title: '当社で用意しているもの',
+          description: `・ライフジャケット
+・シュノーケルセット（ご自身のものも使用可）
+・クバ笠（沖縄の伝統的な笠、希望者のみ）
+・防水バッグ（カメラなどの撮影機材用、自己責任）
+・タコメガネ（シュノーケルが苦手な方用）
+※貴重品は預かりまたは車内保管可能`,
+          icon: 'package'
         },
         {
-          title: '天候について',
-          description: '荒天時は安全のため中止となる場合があります。前日までにご連絡いたします。',
-          icon: 'cloud'
+          title: 'お支払い',
+          description: '現地での現金支払い、または各種電子決済に対応しています。',
+          icon: 'credit-card'
         },
         {
-          title: '予約・キャンセル',
-          description: '3日前までにご予約ください。前日キャンセルは50%、当日キャンセルは100%のキャンセル料が発生します。',
-          icon: 'calendar'
-        },
-        {
-          title: '保険について',
-          description: 'ツアー中の事故に対応する保険に加入しています。詳細は予約時にご説明いたします。',
-          icon: 'shield'
+          title: 'ツアー中止基準',
+          description: `以下の場合、安全のためツアーを中止する場合があります：
+・警報発令中（大雨、洪水、暴風、津波、高潮）
+・雷注意報発令中
+・波高4.0m以上
+・風速11.0m以上
+・前線通過による急激な天候悪化が予想される場合
+・現地ガイドが危険と判断した場合
+・参加者の危険行動や指導に従えない場合
+・参加者またはガイドの体調不良
+
+※中止の場合、前日または当日朝にご連絡します`,
+          icon: 'alert-triangle'
         }
       ]
     }
@@ -187,7 +205,8 @@ export const translations = {
         features: [
           'Sunset view from sail-powered Sabani',
           'Romantic scenery',
-          '100 minutes total'
+          '100 minutes total',
+          'Meet at the shop 1 hour before sunset'
         ]
       },
       priceNote: 'Adult price applies from junior high school students. Children under elementary school age: ¥2,000. Tax and insurance included.',
@@ -210,12 +229,12 @@ export const translations = {
     gallery: {
       title: 'Photo Gallery',
       description: 'Take a look at our actual experiences. We deliver special moments in nature.',
-      alt1: 'Peaceful ocean at sunset',
-      alt2: 'Moment at private beach',
-      alt3: 'Sailing experience on cruise',
-      alt4: 'Encounter with colorful tropical fish',
-      alt5: 'Campfire on deserted island',
-      alt6: 'Smiling participants'
+      alt1: '',
+      alt2: '',
+      alt3: '',
+      alt4: '',
+      alt5: '',
+      alt6: ''
     },
     footer: {
       company: {
@@ -250,29 +269,46 @@ export const translations = {
           icon: 'user'
         },
         {
-          title: 'What to Bring',
-          description: 'Swimsuit, towel, change of clothes, sunscreen, sunglasses (if needed)',
+          title: 'Clothing and Items to Bring',
+          description: `・Clothes that can get wet (boarding from beach)
+・Sandals are acceptable
+・Hat (strong sunlight)
+・Long sleeves or rash guard (sun protection)
+・Drinks
+・Motion sickness medicine (if needed)
+・Life jacket or float for children (if needed)
+※Non-swimming children can join snorkeling tour`,
           icon: 'backpack'
         },
         {
-          title: 'Meeting Point & Time',
-          description: 'Please arrive at Yoshida Sabani Shipyard (Kabira, Ishigaki) 15 minutes before departure.',
-          icon: 'map'
+          title: 'Equipment We Provide',
+          description: `・Life jackets
+・Snorkeling set (personal equipment also welcome)
+・Traditional Okinawan Kuba hat (optional)
+・Waterproof bags (for cameras, at own risk)
+・Viewing goggles (for those not comfortable with snorkeling)
+※Valuables can be stored safely`,
+          icon: 'package'
         },
         {
-          title: 'Weather Conditions',
-          description: 'Tours may be cancelled for safety in case of severe weather. We will notify you by the day before.',
-          icon: 'cloud'
+          title: 'Payment',
+          description: 'We accept cash on-site and various electronic payment methods.',
+          icon: 'credit-card'
         },
         {
-          title: 'Booking & Cancellation',
-          description: 'Please book 3 days in advance. Cancellation fees: 50% for day before, 100% for same day.',
-          icon: 'calendar'
-        },
-        {
-          title: 'Insurance',
-          description: 'We are insured against accidents during tours. Details will be explained upon booking.',
-          icon: 'shield'
+          title: 'Tour Cancellation Criteria',
+          description: `Tours may be cancelled for safety in the following conditions:
+・Weather warnings (heavy rain, flood, storm, tsunami, storm surge)
+・Thunder advisory
+・Wave height over 4.0m
+・Wind speed over 11.0m/s
+・Approaching weather front with expected deterioration
+・Guide's safety assessment
+・Dangerous behavior or non-compliance
+・Poor health condition of participants or guide
+
+※Notification of cancellation: previous day or morning of tour`,
+          icon: 'alert-triangle'
         }
       ]
     }

@@ -24,6 +24,13 @@ export const CaptainSection = () => {
                 <p className="text-gray-600">ニックネーム: イシコー</p>
                 <p className="text-gray-600">生年月日: 1986年1月11日</p>
                 <p className="text-gray-600">趣味: バドミントン</p>
+                <div className="mt-4">
+                  <h4 className="text-xl font-semibold mb-2">保有資格</h4>
+                  <ul className="list-disc list-inside text-gray-600 space-y-1">
+                    <li>水難救助員</li>
+                    <li>シュノーケリングガイド</li>
+                  </ul>
+                </div>
               </div>
               
               <div className="space-y-4">
