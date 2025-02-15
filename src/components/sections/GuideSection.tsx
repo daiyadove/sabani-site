@@ -3,10 +3,10 @@
 import { useI18n } from "@/lib/i18n/context"
 import Image from "next/image"
 import { translations } from "@/lib/i18n/translations"
-import { User, Backpack, MapPin, Package, CreditCard, AlertTriangle, Shield, LucideIcon } from "lucide-react"
+import { User, Backpack, MapPin, Package, CreditCard, AlertTriangle, Shield, Wifi, LucideIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-type IconName = 'user' | 'backpack' | 'map' | 'package' | 'credit-card' | 'alert-triangle' | 'shield'
+type IconName = 'user' | 'backpack' | 'map' | 'package' | 'credit-card' | 'alert-triangle' | 'shield' | 'wifi'
 
 const icons: Record<IconName, LucideIcon> = {
   'user': User,
@@ -16,6 +16,7 @@ const icons: Record<IconName, LucideIcon> = {
   'credit-card': CreditCard,
   'alert-triangle': AlertTriangle,
   'shield': Shield,
+  'wifi': Wifi,
 }
 
 export function GuideSection() {

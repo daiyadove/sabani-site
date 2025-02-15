@@ -83,9 +83,9 @@ export const translations = {
       company: {
         title: '会社情報',
         name: '吉田サバニ造船',
-        address: '〒907-0453 沖縄県石垣市川平1234-5',
-        tel: 'TEL: 0980-XX-XXXX',
-        email: 'Email: info@sabani.com'
+        address: '〒907-0331 沖縄県石垣市字平久保226-8',
+        tel: 'TEL: 090-5021-3690',
+        email: 'Email: yuuki.6111@gmail.com'
       },
       links: {
         title: 'メニュー',
@@ -131,7 +131,7 @@ export const translations = {
 ・防水バッグ（カメラなどの撮影機材用、自己責任）
 ・タコメガネ（シュノーケルが苦手な方用）
 ※貴重品は預かりまたは車内保管可能`,
-          icon: 'package'
+          icon: 'wifi'
         },
         {
           title: 'お支払い',
@@ -157,6 +157,14 @@ export const translations = {
 ※ツアー中止の連絡は、前日の時もあれば、当日の朝の海の状況を見てのご連絡といった場合もございます。
 お客様のスケジュールの都合もございますので、なるべく早いご連絡を心がけています。`,
           icon: 'alert-triangle'
+        },
+        {
+          title: '設備',
+          description: `・Wi-Fi🛜
+・トイレ：公衆トイレ
+・室内温水シャワー1つ
+・屋外シャワー2つ`,
+          icon: 'package'
         }
       ]
     }
@@ -245,9 +253,9 @@ export const translations = {
       company: {
         title: 'Company Info',
         name: 'Yoshida Sabani Shipyard',
-        address: '1234-5 Kabira, Ishigaki City, Okinawa 907-0453',
-        tel: 'TEL: 0980-XX-XXXX',
-        email: 'Email: info@sabani.com'
+        address: '226-8 Hirakubo, Ishigaki City, Okinawa 907-0331',
+        tel: 'TEL: 090-5021-3690',
+        email: 'Email: yuuki.6111@gmail.com'
       },
       links: {
         title: 'Menu',
@@ -318,6 +326,14 @@ Please understand that we may need to cancel tours for your safety if we determi
 ※Tour cancellation notices may be given the day before or on the morning of the tour based on sea conditions.
 We strive to notify you as early as possible, considering your schedule arrangements.`,
           icon: 'alert-triangle'
+        },
+        {
+          title: 'Facilities',
+          description: `・Wi-Fi🛜
+・Toilet: Public restroom
+・1 Indoor hot water shower
+・2 Outdoor showers`,
+          icon: 'wifi'
         }
       ]
     }

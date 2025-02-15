@@ -20,7 +20,11 @@ export const CaptainSection = () => {
           <div className="w-full md:w-2/3">
             <div className="space-y-6">
               <div className="space-y-2">
-                <h3 className="text-2xl font-bold">石垣裕貴</h3>
+                <h3 className="text-2xl font-bold">石垣裕貴代表</h3>
+                <div className="my-8 py-8 px-8 bg-gradient-to-br from-red-50/90 via-red-50/70 to-red-50/40 rounded-lg shadow-md">
+                  <p className="text-red-800 font-extrabold text-2xl md:text-4xl tracking-[0.1em] drop-shadow-sm">先人より受け継ぐ</p>
+                  <p className="text-red-800 font-extrabold text-2xl md:text-4xl tracking-[0.1em] mt-4 drop-shadow-sm">海のように深い知恵。</p>
+                </div>
                 <p className="text-gray-600">ニックネーム: イシコー</p>
                 <p className="text-gray-600">生年月日: 1986年1月11日</p>
                 <p className="text-gray-600">趣味: バドミントン</p>
