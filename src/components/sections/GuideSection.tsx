@@ -1,6 +1,7 @@
 "use client"
 
 import { useI18n } from "@/lib/i18n/context"
+import Image from "next/image"
 import { translations } from "@/lib/i18n/translations"
 import { User, Backpack, MapPin, Package, CreditCard, AlertTriangle, Shield, LucideIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -33,26 +34,61 @@ export function GuideSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6">
           {t.items.map((item, index) => {
             const Icon = icons[item.icon as IconName]
             return (
               <Card key={index} className="border-2">
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-blue-50">
-                      <Icon className="h-6 w-6 text-blue-600" />
+                {item.title === 'お支払い' ? (
+                  <div className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-1/2">
+                      <div className="relative aspect-[4/3]">
+                        <Image
+                          src="/images/payments.jpg"
+                          alt="お支払い方法"
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                      </div>
                     </div>
-                    <CardTitle className="text-lg">
-                      {item.title}
-                    </CardTitle>
+                    <div className="w-full md:w-1/2">
+                      <CardHeader>
+                        <div className="flex items-center gap-3">
+                          <div className="p-2 rounded-lg bg-blue-50">
+                            <Icon className="h-6 w-6 text-blue-600" />
+                          </div>
+                          <CardTitle className="text-lg">
+                            {item.title}
+                          </CardTitle>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-neutral-600 whitespace-pre-line">
+                          {item.description}
+                        </p>
+                      </CardContent>
+                    </div>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-neutral-600 whitespace-pre-line">
-                    {item.description}
-                  </p>
-                </CardContent>
+                ) : (
+                  <>
+                    <CardHeader>
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 rounded-lg bg-blue-50">
+                          <Icon className="h-6 w-6 text-blue-600" />
+                        </div>
+                        <CardTitle className="text-lg">
+                          {item.title}
+                        </CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-neutral-600 whitespace-pre-line">
+                        {item.description}
+                      </p>
+                    </CardContent>
+                  </>
+                )}
               </Card>
             )
           })}

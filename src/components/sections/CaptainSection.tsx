@@ -10,10 +10,10 @@ export const CaptainSection = () => {
             {/* TODO: Replace with actual captain's photo */}
             <div className="relative w-full aspect-square">
               <Image
-                src="/images/captain-placeholder.jpg"
+                src="/images/profile.jpg"
                 alt="石垣裕貴"
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
               />
             </div>
           </div>
@@ -65,4 +65,4 @@ export const CaptainSection = () => {
       </div>
     </section>
   );
-}; 
+};

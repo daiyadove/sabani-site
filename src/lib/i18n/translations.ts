@@ -19,7 +19,7 @@ export const translations = {
       reserve: '予約する'
     },
     activities: {
-      title: '久宇良サバニツアー',
+      title: '平久保サバニツアー',
       subtitle: 'サバニで巡る、石垣島の海の冒険',
       course1: {
         title: 'サバニライド',
@@ -140,7 +140,11 @@ export const translations = {
         },
         {
           title: 'ツアー中止基準',
-          description: `以下の場合、安全のためツアーを中止する場合があります：
+          description: `サバニツアーは、天候の影響を強く受けます。
+海のコンディションは刻一刻と変化していきます。
+以下のことで、安全に航海できないと判断した場合、お客様の生命に関わることですので
+ツアーを中止にすることがあることをご了承ください。
+
 ・警報発令中（大雨、洪水、暴風、津波、高潮）
 ・雷注意報発令中
 ・波高4.0m以上
@@ -150,7 +154,8 @@ export const translations = {
 ・参加者の危険行動や指導に従えない場合
 ・参加者またはガイドの体調不良
 
-※中止の場合、前日または当日朝にご連絡します`,
+※ツアー中止の連絡は、前日の時もあれば、当日の朝の海の状況を見てのご連絡といった場合もございます。
+お客様のスケジュールの都合もございますので、なるべく早いご連絡を心がけています。`,
           icon: 'alert-triangle'
         }
       ]
@@ -176,7 +181,7 @@ export const translations = {
       reserve: 'Reserve Now'
     },
     activities: {
-      title: 'Kura Sabani Tour',
+      title: 'Hirakubo Sabani Tour',
       subtitle: 'Ocean Adventures in Ishigaki Island by Sabani',
       course1: {
         title: 'Sabani Ride',
@@ -297,7 +302,10 @@ export const translations = {
         },
         {
           title: 'Tour Cancellation Criteria',
-          description: `Tours may be cancelled for safety in the following conditions:
+          description: `Sabani tours are highly weather-dependent.
+Sea conditions can change rapidly from moment to moment.
+Please understand that we may need to cancel tours for your safety if we determine that safe navigation is not possible under the following conditions:
+
 ・Weather warnings (heavy rain, flood, storm, tsunami, storm surge)
 ・Thunder advisory
 ・Wave height over 4.0m
@@ -307,10 +315,11 @@ export const translations = {
 ・Dangerous behavior or non-compliance
 ・Poor health condition of participants or guide
 
-※Notification of cancellation: previous day or morning of tour`,
+※Tour cancellation notices may be given the day before or on the morning of the tour based on sea conditions.
+We strive to notify you as early as possible, considering your schedule arrangements.`,
           icon: 'alert-triangle'
         }
       ]
     }
   }
-} 
+}

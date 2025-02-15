@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sabani | 沖縄伝統の木造船",
+  title: "帆の家 | 平久保サバニツアー",
   description: "沖縄の伝統的な木造船「サバニ」の体験乗船や文化継承活動を行っています。",
   icons: {
     icon: '/favicon.ico',
