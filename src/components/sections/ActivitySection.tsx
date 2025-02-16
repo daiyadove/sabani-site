@@ -1,9 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useI18n } from "@/lib/i18n/context"
 import { translations } from "@/lib/i18n/translations"
 
@@ -16,13 +14,13 @@ export function ActivitySection() {
   const activities = [
     {
       key: 'course1' as CourseKey,
-      image: "/images/tour/sabani-ride.jpg",
+      image: "/images/tour/sabani-ride.png",
       price: 10000,
       childPrice: 5000,
     },
     {
       key: 'course2' as CourseKey,
-      image: "/images/tour/snorkel.jpg",
+      image: "/images/tour/snorkel.png",
       price: 15000,
       childPrice: 7500,
     },
@@ -102,13 +100,6 @@ export function ActivitySection() {
                         </div>
                       </div>
                     </CardContent>
-                    <CardFooter>
-                      <Button asChild className="w-full">
-                        <Link href={`/reservation?plan=${encodeURIComponent(course.title)}`}>
-                          {t.reserveButton}
-                        </Link>
-                      </Button>
-                    </CardFooter>
                   </div>
                 </div>
               </Card>
