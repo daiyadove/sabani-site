@@ -108,7 +108,7 @@ export const translations = {
       items: [
         {
           title: '参加条件',
-          description: '小学生以上の健康な方。泳げない方でもご参加いただけます。',
+          description: '小学生以上の健康な方、妊娠していない方。泳げない方でもご参加いただけます。',
           icon: 'user'
         },
         {
@@ -278,7 +278,7 @@ export const translations = {
       items: [
         {
           title: 'Requirements',
-          description: 'Healthy individuals from elementary school age. Non-swimmers are welcome.',
+          description: 'Healthy individuals from elementary school age, non-pregnant individuals only. Non-swimmers are welcome.',
           icon: 'user'
         },
         {

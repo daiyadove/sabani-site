@@ -31,8 +31,8 @@ export const CaptainSection = () => {
                 <div className="mt-4">
                   <h4 className="text-xl font-semibold mb-2">保有資格</h4>
                   <ul className="list-disc list-inside text-gray-600 space-y-1">
-                    <li>水難救助員</li>
-                    <li>シュノーケリングガイド</li>
+                    <li>沖縄マリンレジャーセイフティービューロー認定水難救助員</li>
+                    <li>沖縄マリンレジャーセイフティービューロー認定スノーケルガイド</li>
                   </ul>
                 </div>
               </div>
@@ -45,7 +45,7 @@ export const CaptainSection = () => {
                 <div>
                   <h4 className="text-xl font-semibold mb-2">競技での歩み</h4>
                   <p className="text-gray-700">
-                    沖縄県内で数々のタイトルを獲得し、高校では福岡県の強豪校に留学。数多くの大会での経験は、私にとってかけがえのない思い出です。特に高校生の時の全国選抜大会ベスト8(ダブルス)、全国インターハイ(ダブルス)ベスト8や国体代表としての経験は、成長の一環として心に残っています。
+                    沖縄県内で数々のタイトルを獲得し、高校では福岡県の強豪校に留学。数多くの大会での経験は、私にとってかけがえのない思い出です。特に高校生の時の平成15年全国選抜大会ベスト8(ダブルス)、平成15年全国インターハイ(ダブルス)ベスト8や国体代表としての経験は、成長の一環として心に残っています。
                   </p>
                 </div>
                 
