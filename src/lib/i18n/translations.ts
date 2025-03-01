@@ -82,7 +82,7 @@ export const translations = {
     footer: {
       company: {
         title: '会社情報',
-        name: '吉田サバニ造船',
+        name: '平久保サバニツアー',
         address: '〒907-0331 沖縄県石垣市字平久保226-8',
         tel: 'TEL: 090-5021-3690',
         email: 'Email: yuuki.6111@gmail.com'
@@ -108,7 +108,7 @@ export const translations = {
       items: [
         {
           title: '参加条件',
-          description: '小学生以上の健康な方、妊娠していない方。泳げない方でもご参加いただけます。',
+          description: '1歳以上の健康な方、妊娠していない方。泳げない方でもご参加いただけます。',
           icon: 'user'
         },
         {
@@ -127,7 +127,6 @@ export const translations = {
           title: '当社で用意しているもの',
           description: `・ライフジャケット
 ・シュノーケルセット（ご自身のものも使用可）
-・クバ笠（沖縄の伝統的な笠、希望者のみ）
 ・防水バッグ（カメラなどの撮影機材用、自己責任）
 ・タコメガネ（シュノーケルが苦手な方用）
 ※貴重品は預かりまたは車内保管可能`,
@@ -160,10 +159,10 @@ export const translations = {
         },
         {
           title: '設備',
-          description: `・Wi-Fi🛜
-・トイレ：公衆トイレ
+          description: `・トイレ：公衆トイレ
 ・室内温水シャワー1つ
-・屋外シャワー2つ`,
+・屋外シャワー2つ
+・駐車場5台`,
           icon: 'package'
         }
       ]
@@ -252,7 +251,7 @@ export const translations = {
     footer: {
       company: {
         title: 'Company Info',
-        name: 'Yoshida Sabani Shipyard',
+        name: 'Hirakubo Sabani Tour',
         address: '226-8 Hirakubo, Ishigaki City, Okinawa 907-0331',
         tel: 'TEL: 090-5021-3690',
         email: 'Email: yuuki.6111@gmail.com'
@@ -278,7 +277,7 @@ export const translations = {
       items: [
         {
           title: 'Requirements',
-          description: 'Healthy individuals from elementary school age, non-pregnant individuals only. Non-swimmers are welcome.',
+          description: 'Healthy individuals from 1 year of age, non-pregnant individuals only. Non-swimmers are welcome.',
           icon: 'user'
         },
         {
@@ -297,7 +296,6 @@ export const translations = {
           title: 'Equipment We Provide',
           description: `・Life jackets
 ・Snorkeling set (personal equipment also welcome)
-・Traditional Okinawan Kuba hat (optional)
 ・Waterproof bags (for cameras, at own risk)
 ・Viewing goggles (for those not comfortable with snorkeling)
 ※Valuables can be stored safely`,
@@ -329,10 +327,10 @@ We strive to notify you as early as possible, considering your schedule arrangem
         },
         {
           title: 'Facilities',
-          description: `・Wi-Fi🛜
-・Toilet: Public restroom
+          description: `・Toilet: Public restroom
 ・1 Indoor hot water shower
-・2 Outdoor showers`,
+・2 Outdoor showers
+・Parking for 5 cars`,
           icon: 'wifi'
         }
       ]

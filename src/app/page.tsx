@@ -15,9 +15,6 @@ export default function Home() {
         <div id="home">
           <HeroSection />
         </div>
-        <div id="video">
-          <VideoSection />
-        </div>
         <div id="activities">
           <ActivitySection />
         </div>
