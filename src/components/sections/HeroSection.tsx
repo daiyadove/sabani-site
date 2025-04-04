@@ -12,13 +12,13 @@ export function HeroSection() {
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-center">
-      {/* 背景画像 */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero.jpg"
-          alt="サバニでの航海"
-          fill
-          priority
+            {/* 背景画像 */}
+            <div className="absolute inset-0">
+              <Image
+                src="/images/tour/sabani-ride.png" // 画像パスを変更
+                alt={t.title} // altテキストも翻訳キーに合わせる
+                fill
+                priority
           className="object-cover"
           sizes="100vw"
           quality={90}
@@ -31,36 +31,31 @@ export function HeroSection() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-11 md:col-span-8 lg:col-span-6 md:col-start-4 lg:col-start-6 text-white">
-              <h1 className="text-3xl md:text-4xl font-bold mb-8">
-                {t.title}
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                {t.title} {/* 沖縄の伝統船サバニ */}
               </h1>
-              <div className="space-y-2 text-base md:text-lg lg:text-xl leading-relaxed">
-                <p>{t.location}</p>
-                <p>{t.shipyard}</p>
-                <p>{t.description1}</p>
-                <p>{t.description2}</p>
-                <p>{t.description3}</p>
-                <div className="mt-6" />
-                <p>{t.sailing1}</p>
-                <p>{t.sailing2}</p>
-                <div className="mt-6" />
-                <p>{t.activities1}</p>
-                <p>{t.activities2}</p>
-                <p>{t.activities3}</p>
-                <div className="mt-6" />
-                <p>{t.memory1}</p>
-                <p>{t.memory2}</p>
-                <p>{t.memory3}</p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-8">
+                {t.subtitle} {/* 琉球の風と歴史を体感する、本物の航海へ */}
+              </h2>
+              <div className="space-y-4 text-base md:text-lg leading-relaxed">
+                <p>{t.appeal1}</p> {/* ありきたりな観光では満足できないあなたへ。 */}
+                <p>{t.appeal2}</p> {/* 家族と、大切な人と、忘れられない海の記憶を。 */}
+                <ul className="list-disc list-inside space-y-2 pl-2 mt-4">
+                  <li>{t.benefit1}</li> {/* 琉球王朝時代から続く航海術に触れる */}
+                  <li>{t.benefit2}</li> {/* 手付かずの美しい海と自然を独り占め */}
+                  <li>{t.benefit3}</li> {/* 専門ガイドが文化と自然を深く解説 */}
+                </ul>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
                   <Link href="#activities">
-                    {t.viewActivities}
+                    {t.ctaViewPlans} {/* 体験プラン詳細を見る */}
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white">
-                  <Link href="#activities">
-                    {t.reserve}
+                  {/* TODO: 予約システムへのリンクまたはモーダル実装 */}
+                  <Link href="#reserve"> {/* 仮のリンク */}
+                    {t.ctaReserve} {/* 空き状況を確認・予約する */}
                   </Link>
                 </Button>
               </div>

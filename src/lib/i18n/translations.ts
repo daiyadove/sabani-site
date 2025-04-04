@@ -15,8 +15,16 @@ export const translations = {
       memory1: 'あなたはこの旅で',
       memory2: '一生の思い出を',
       memory3: '手に入れるでしょう。',
-      viewActivities: 'アクティビティを見る',
-      reserve: '予約する'
+      // viewActivities: 'アクティビティを見る', // 旧キー (コメントアウトまたは削除)
+      // reserve: '予約する', // 旧キー (コメントアウトまたは削除)
+      subtitle: '琉球の風と歴史を体感する、本物の航海へ',
+      appeal1: 'ありきたりな観光では満足できないあなたへ。',
+      appeal2: '家族と、大切な人と、忘れられない海の記憶を。',
+      benefit1: '琉球王朝時代から続く航海術に触れる',
+      benefit2: '手付かずの美しい海と自然を独り占め',
+      benefit3: '専門ガイドが文化と自然を深く解説',
+      ctaViewPlans: '体験プラン詳細を見る',
+      ctaReserve: '空き状況を確認・予約する'
     },
     activities: {
       title: '平久保サバニツアー',
@@ -24,6 +32,7 @@ export const translations = {
       course1: {
         title: 'サバニライド',
         subtitle: 'Sabani ride',
+        appeal: '手軽にサバニ体験！家族や初心者におすすめ',
         description: 'サバニライドで平久保半島の大自然を満喫コース。',
         features: [
           '船でしかいけないプライベートビーチに上陸',
@@ -34,6 +43,7 @@ export const translations = {
       course2: {
         title: 'サバニライド＋スノーケル',
         subtitle: 'Sabani ride + Snorkel',
+        appeal: '本物の珊瑚礁を堪能！アクティブ派に',
         description: 'サバニライドで平久保半島の珊瑚礁ポイントまで行き、スノーケルを楽しむコース。',
         features: [
           '生きた珊瑚礁でスノーケル',
@@ -44,6 +54,7 @@ export const translations = {
       course3: {
         title: 'サンセットクルーズ',
         subtitle: 'Sunset Cruise',
+        appeal: '特別な時間を演出。カップルや記念日に',
         description: '平久保半島の大自然を朱色に染めるサンセットを眺めるコース！',
         features: [
           '帆で静かに走るサバニからの夕日',
@@ -55,7 +66,7 @@ export const translations = {
       priceNote: '中学生以上は大人料金、小学生未満は2000円です。消費税・保険料込み。',
       adult: '大人',
       child: '小学生',
-      reserveButton: '予約はこちら'
+      reserveButton: 'このプランを予約する'
     },
     video: {
       title: '世代を超えた航海',
@@ -82,10 +93,10 @@ export const translations = {
     footer: {
       company: {
         title: '会社情報',
-        name: '平久保サバニツアー',
+        name: '帆の家 | 平久保サバニツアー',
         address: '〒907-0331 沖縄県石垣市字平久保226-8',
         tel: 'TEL: 090-5021-3690',
-        email: 'Email: yuuki.6111@gmail.com'
+        email: 'Email: honoie.hirakubo@gmail.com'
       },
       links: {
         title: 'メニュー',
@@ -99,6 +110,10 @@ export const translations = {
         title: '営業時間',
         regular: '営業時間: 9:00 - 18:00',
         note: '※天候により営業時間が変更になる場合があります'
+      },
+      cta: {
+        title: 'ご予約・お問い合わせ',
+        reserveButton: '今すぐ予約する'
       },
       copyright: '© 2024 Sabani. All rights reserved.'
     },
@@ -166,6 +181,63 @@ export const translations = {
           icon: 'package'
         }
       ]
+    },
+    testimonials: {
+      title: 'お客様の声',
+      subtitle: '実際に体験されたお客様からのメッセージです',
+      roles: {
+        couple40s: '40代 夫婦',
+        family: '家族連れ',
+        cultureLover: '文化愛好家'
+      },
+      comment1: '歴史を感じるサバニ体験は格別でした。ガイドさんの知識も豊富で、沖縄の文化に深く触れることができました。',
+      comment2: '子供たちが目を輝かせていました！穏やかな海でのんびり過ごせて、家族全員大満足です。安全面も配慮されていて安心でした。',
+      comment3: '普通のツアーでは物足りないと思っていたので、サバニに乗れて感動しました。風と波の音だけが聞こえる静かな時間は最高でした。'
+    },
+    faq: {
+      title: 'よくあるご質問',
+      subtitle: 'ご不明な点はこちらでご確認ください',
+      questions: {
+        q1: '初心者や泳げない人でも参加できますか？',
+        q2: '子供は何歳から参加できますか？',
+        q3: '雨天の場合はどうなりますか？',
+        q4: '持ち物は何が必要ですか？',
+        q5: '集合場所はどこですか？'
+      },
+      answers: {
+        a1: 'はい、ご参加いただけます。経験豊富なガイドが丁寧にサポートしますのでご安心ください。ライフジャケットも必ず着用いただきます。',
+        a2: '1歳からご参加可能です。小さなお子様向けのライフジャケットもご用意しております。小学生未満のお子様は割引料金がございます。',
+        a3: '小雨程度であれば催行しますが、安全を考慮し、警報発令時や雷注意報、強風、高波の場合は中止となります。中止の場合は、可能な限り早くご連絡いたします。詳細は「ご参加にあたって」のツアー中止基準をご確認ください。',
+        a4: '濡れても良い服装、サンダル、帽子、日焼け対策（長袖やラッシュガード）、お飲み物をご持参ください。必要であれば酔い止め薬もご準備ください。詳細は「ご参加にあたって」の服装と持ち物をご確認ください。',
+        a5: '集合場所は「平久保サバニツアー」の店舗（沖縄県石垣市字平久保226-8）となります。駐車場もございます。'
+      }
+    },
+    captain: {
+      title: '船長プロフィール',
+      name: '石垣 裕貴 (代表)',
+      nickname: 'ニックネーム: イシコー',
+      qualifications: {
+        title: '保有資格',
+        items: [
+          '沖縄マリンレジャーセイフティービューロー認定水難救助員',
+          '沖縄マリンレジャーセイフティービューロー認定スノーケルガイド',
+          // 必要に応じて他の資格を追加
+        ]
+      },
+      greeting: 'はいさい！船長の石垣裕貴です。石垣島の美しい海と文化に魅せられ、この素晴らしい体験を多くの人に届けたいという想いでサバニツアーを始めました。',
+      passion: {
+        title: 'サバニと文化への想い',
+        text1: 'サバニは単なる船ではありません。琉球の歴史と人々の知恵が詰まった文化遺産です。風を読み、潮の流れを感じながら進む航海は、自然との一体感を教えてくれます。',
+        text2: 'この島で生まれ育った私だからこそ伝えられる、海の魅力、サバニの奥深さ、そして石垣島の豊かな自然と文化を、ツアーを通じて感じていただけたら嬉しいです。'
+      },
+      safety: {
+        title: '安全への取り組み',
+        text: '皆様に安心して楽しんでいただくため、安全管理には細心の注意を払っています。長年の経験と資格に基づき、常に海の状況を判断し、無理のないツアー催行を心がけています。お子様からご年配の方まで、安全第一でサポートいたします。'
+      },
+      message: {
+        title: '皆様へ',
+        text: 'ありきたりの観光では味わえない、特別な体験がここにあります。サバニに乗って、心に残る石垣島の思い出を一緒に作りませんか？皆様のお越しを心よりお待ちしております！'
+      }
     }
   },
   en: {
@@ -184,8 +256,16 @@ export const translations = {
       memory1: 'Create unforgettable',
       memory2: 'memories',
       memory3: 'on this journey.',
-      viewActivities: 'View Activities',
-      reserve: 'Reserve Now'
+      // viewActivities: 'View Activities', // Old key (comment out or remove)
+      // reserve: 'Reserve Now', // Old key (comment out or remove)
+      subtitle: 'Experience the Ryukyuan wind and history on an authentic voyage',
+      appeal1: 'For those unsatisfied with ordinary sightseeing.',
+      appeal2: 'Create unforgettable ocean memories with family and loved ones.',
+      benefit1: 'Experience navigation techniques dating back to the Ryukyu Kingdom era',
+      benefit2: 'Enjoy untouched beautiful seas and nature all to yourself',
+      benefit3: 'Expert guides provide deep insights into culture and nature',
+      ctaViewPlans: 'View Experience Plans',
+      ctaReserve: 'Check Availability & Book'
     },
     activities: {
       title: 'Hirakubo Sabani Tour',
@@ -193,6 +273,7 @@ export const translations = {
       course1: {
         title: 'Sabani Ride',
         subtitle: 'Sabani ride',
+        appeal: 'Easy Sabani Experience! Recommended for families and beginners',
         description: 'Enjoy the nature of Hirakubo Peninsula on our Sabani boat.',
         features: [
           'Land on exclusive beach accessible only by boat',
@@ -203,6 +284,7 @@ export const translations = {
       course2: {
         title: 'Sabani Ride + Snorkel',
         subtitle: 'Sabani ride + Snorkel',
+        appeal: 'Enjoy authentic coral reefs! For the active ones',
         description: 'Ride to coral reef points of Hirakubo Peninsula and enjoy snorkeling.',
         features: [
           'Snorkel in living coral reefs',
@@ -213,6 +295,7 @@ export const translations = {
       course3: {
         title: 'Sunset Cruise',
         subtitle: 'Sunset Cruise',
+        appeal: 'Create special moments. For couples and anniversaries',
         description: 'Watch the sunset paint Hirakubo Peninsula in crimson colors!',
         features: [
           'Sunset view from sail-powered Sabani',
@@ -224,7 +307,7 @@ export const translations = {
       priceNote: 'Adult price applies from junior high school students. Children under elementary school age: ¥2,000. Tax and insurance included.',
       adult: 'Adult',
       child: 'Elementary',
-      reserveButton: 'Reserve Now'
+      reserveButton: 'Book This Plan'
     },
     video: {
       title: 'A Journey Across Generations',
@@ -254,7 +337,7 @@ export const translations = {
         name: 'Hirakubo Sabani Tour',
         address: '226-8 Hirakubo, Ishigaki City, Okinawa 907-0331',
         tel: 'TEL: 090-5021-3690',
-        email: 'Email: yuuki.6111@gmail.com'
+        email: 'Email: honoie.hirakubo@gmail.com'
       },
       links: {
         title: 'Menu',
@@ -268,6 +351,10 @@ export const translations = {
         title: 'Business Hours',
         regular: 'Hours: 9:00 AM - 6:00 PM',
         note: '* Business hours may change depending on weather conditions'
+      },
+      cta: {
+        title: 'Reservations & Inquiries',
+        reserveButton: 'Book Now'
       },
       copyright: '© 2024 Sabani. All rights reserved.'
     },
@@ -334,6 +421,63 @@ We strive to notify you as early as possible, considering your schedule arrangem
           icon: 'wifi'
         }
       ]
+    },
+    testimonials: {
+      title: 'Testimonials',
+      subtitle: 'Messages from our valued customers who experienced the tour.',
+      roles: {
+        couple40s: 'Couple (40s)',
+        family: 'Family',
+        cultureLover: 'Culture Enthusiast'
+      },
+      comment1: 'The Sabani experience, steeped in history, was exceptional. The guide\'s knowledge was extensive, allowing us to deeply connect with Okinawan culture.',
+      comment2: 'Our children\'s eyes sparkled with excitement! We had a relaxing time on the calm sea, and the whole family was very satisfied. Safety was well considered, which gave us peace of mind.',
+      comment3: 'I was looking for something beyond ordinary tours, so I was thrilled to ride the Sabani. The quiet time with only the sound of the wind and waves was fantastic.'
+    },
+    faq: {
+      title: 'Frequently Asked Questions',
+      subtitle: 'Please check here if you have any questions.',
+      questions: {
+        q1: 'Can beginners or non-swimmers participate?',
+        q2: 'What is the minimum age for children to participate?',
+        q3: 'What happens if it rains?',
+        q4: 'What should I bring?',
+        q5: 'Where is the meeting place?'
+      },
+      answers: {
+        a1: 'Yes, you can participate. Our experienced guides will provide thorough support, so please rest assured. Life jackets are mandatory.',
+        a2: 'Children aged 1 and above can participate. We also have life jackets available for small children. Discounted rates apply for children under elementary school age.',
+        a3: 'Tours proceed in light rain, but will be cancelled for safety reasons in case of warnings (heavy rain, storm, etc.), thunder advisories, strong winds, or high waves. We will notify you as soon as possible if the tour is cancelled. Please refer to the "Tour Cancellation Criteria" in the Participation Guide for details.',
+        a4: 'Please bring clothes that can get wet, sandals, a hat, sun protection (long sleeves or rash guard), and drinks. Please also prepare motion sickness medicine if needed. Refer to the "Clothing and Items to Bring" section in the Participation Guide for details.',
+        a5: 'The meeting place is the "Hirakubo Sabani Tour" shop (226-8 Hirakubo, Ishigaki City, Okinawa). Parking is available.'
+      }
+    },
+    captain: {
+      title: 'Captain Profile',
+      name: 'Yuki Ishigaki (Representative)',
+      nickname: 'Nickname: Ishiko',
+      qualifications: {
+        title: 'Qualifications',
+        items: [
+          'Okinawa Marine Leisure Safety Bureau Certified Water Rescue Personnel',
+          'Okinawa Marine Leisure Safety Bureau Certified Snorkel Guide',
+          // Add other qualifications as needed
+        ]
+      },
+      greeting: 'Haisai! I\'m Yuki Ishigaki, the captain. Fascinated by the beautiful sea and culture of Ishigaki Island, I started this Sabani tour with the desire to share this wonderful experience with many people.',
+      passion: {
+        title: 'Passion for Sabani and Culture',
+        text1: 'Sabani is not just a boat; it\'s a cultural heritage filled with the history and wisdom of the Ryukyu people. Sailing while reading the wind and feeling the ocean currents teaches us a sense of unity with nature.',
+        text2: 'As someone born and raised on this island, I hope you can feel the charm of the sea, the depth of Sabani, and the rich nature and culture of Ishigaki Island through the tour.'
+      },
+      safety: {
+        title: 'Commitment to Safety',
+        text: 'We pay meticulous attention to safety management so that everyone can enjoy the tour with peace of mind. Based on years of experience and qualifications, we constantly assess sea conditions and strive to operate tours safely. We provide support with safety as our top priority, for everyone from children to the elderly.'
+      },
+      message: {
+        title: 'To Our Guests',
+        text: 'Here lies a special experience you cannot find in ordinary sightseeing. Why not ride a Sabani and create unforgettable memories of Ishigaki Island together? We sincerely look forward to welcoming you!'
+      }
     }
   }
 }
