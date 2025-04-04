@@ -1,8 +1,10 @@
 "use client"
 
-import Link from "next/link"
-import { useI18n } from "@/lib/i18n/context"
-import { translations } from "@/lib/i18n/translations"
+import Link from "next/link";
+import { Button } from "@/components/ui/button"; // Button をインポート
+import { Phone, Mail } from "lucide-react"; // アイコンをインポート
+import { useI18n } from "@/lib/i18n/context";
+import { translations } from "@/lib/i18n/translations";
 
 export function Footer() {
   const { locale } = useI18n()
@@ -63,6 +65,27 @@ export function Footer() {
               <p>{t.hours.note}</p>
             </div>
           </div>
+        </div>
+
+        {/* CTAセクション */}
+        <div className="mt-12 pt-8 border-t border-neutral-800 text-center">
+          <h3 className="text-xl font-bold mb-4">{t.cta.title}</h3> {/* ご予約・お問い合わせ */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-6">
+            <a href={`tel:${t.company.tel.replace('TEL: ', '')}`} className="flex items-center gap-2 hover:text-blue-400">
+              <Phone size={18} />
+              <span>{t.company.tel}</span>
+            </a>
+            <a href={`mailto:${t.company.email.replace('Email: ', '')}`} className="flex items-center gap-2 hover:text-blue-400">
+              <Mail size={18} />
+              <span>{t.company.email}</span>
+            </a>
+          </div>
+          {/* TODO: 予約システムへのリンク */}
+          <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Link href="#reserve">
+              {t.cta.reserveButton} {/* 今すぐ予約する */}
+            </Link>
+          </Button>
         </div>
 
         <div className="mt-12 pt-8 border-t border-neutral-800 text-center text-sm text-neutral-400">

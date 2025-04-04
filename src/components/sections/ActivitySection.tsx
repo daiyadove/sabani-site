@@ -1,9 +1,11 @@
 "use client"
 
-import Image from "next/image"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { useI18n } from "@/lib/i18n/context"
-import { translations } from "@/lib/i18n/translations"
+import Image from "next/image";
+import Link from "next/link"; // Link をインポート
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"; // CardFooter をインポート
+import { Button } from "@/components/ui/button"; // Button をインポート
+import { useI18n } from "@/lib/i18n/context";
+import { translations } from "@/lib/i18n/translations";
 
 type CourseKey = 'course1' | 'course2' | 'course3'
 
@@ -67,10 +69,12 @@ export function ActivitySection() {
                         <div>{course.title}</div>
                         <div className="text-lg font-normal text-neutral-600 mt-1">{course.subtitle}</div>
                       </CardTitle>
-                      <CardDescription>{course.description}</CardDescription>
+                      {/* ターゲット層へのアピールを追加 */}
+                      <p className="text-sm text-blue-700 font-semibold mt-2">{course.appeal}</p>
+                      <CardDescription className="mt-2">{course.description}</CardDescription>
                     </CardHeader>
-                    <CardContent className="flex-grow">
-                      <ul className="space-y-2">
+                    <CardContent className="flex-grow flex flex-col"> {/* flex-col を追加 */}
+                      <ul className="space-y-2 mb-4"> {/* mb-4 を追加 */}
                         {course.features.map((feature: string) => (
                           <li key={feature} className="flex items-center">
                             <svg
@@ -100,6 +104,15 @@ export function ActivitySection() {
                         </div>
                       </div>
                     </CardContent>
+                    {/* 予約ボタンを追加 */}
+                    <CardFooter className="mt-auto pt-4 border-t md:border-t-0 md:pt-0">
+                      {/* TODO: 予約システムへのリンク */}
+                      <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                        <Link href="#reserve">
+                          {t.reserveButton} {/* このプランを予約する */}
+                        </Link>
+                      </Button>
+                    </CardFooter>
                   </div>
                 </div>
               </Card>
