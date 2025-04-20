@@ -106,9 +106,18 @@ export function ActivitySection() {
                     </CardContent>
                     {/* 予約ボタンを追加 */}
                     <CardFooter className="mt-auto pt-4 border-t md:border-t-0 md:pt-0">
-                      {/* TODO: 予約システムへのリンク */}
                       <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
-                        <Link href="#reserve">
+                        <Link 
+                          href={
+                            activity.key === 'course1' 
+                              ? 'https://activityjapan.com/publish/plan/58588' 
+                              : activity.key === 'course2' 
+                                ? 'https://activityjapan.com/publish/plan/58848' 
+                                : 'https://activityjapan.com/publish/plan/58849'
+                          } 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
                           {t.reserveButton} {/* このプランを予約する */}
                         </Link>
                       </Button>
