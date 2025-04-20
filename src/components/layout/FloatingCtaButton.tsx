@@ -35,9 +35,9 @@ export function FloatingCtaButton() {
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      {/* TODO: 予約システムへのリンク */}
+      {/* アクティビティセクションへスクロール */}
       <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 shadow-lg">
-        <Link href="#reserve">
+        <Link href="#activities">
           <CalendarCheck className="mr-2 h-5 w-5" />
           {t.reserveButton} {/* 今すぐ予約する */}
         </Link>

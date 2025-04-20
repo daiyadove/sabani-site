@@ -53,8 +53,8 @@ export function HeroSection() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white text-white">
-                  {/* TODO: 予約システムへのリンクまたはモーダル実装 */}
-                  <Link href="#reserve"> {/* 仮のリンク */}
+                  {/* アクティビティセクションへスクロール */}
+                  <Link href="#activities">
                     {t.ctaReserve} {/* 空き状況を確認・予約する */}
                   </Link>
                 </Button>

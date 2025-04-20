@@ -80,9 +80,9 @@ export function Footer() {
               <span>{t.company.email}</span>
             </a>
           </div>
-          {/* TODO: 予約システムへのリンク */}
+          {/* アクティビティセクションへスクロール */}
           <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-            <Link href="#reserve">
+            <Link href="#activities">
               {t.cta.reserveButton} {/* 今すぐ予約する */}
             </Link>
           </Button>
